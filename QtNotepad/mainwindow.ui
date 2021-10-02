@@ -59,6 +59,7 @@
     <addaction name="actionCopy"/>
     <addaction name="actionPaste"/>
     <addaction name="actionCut"/>
+    <addaction name="actionUndo"/>
     <addaction name="actionRedo"/>
    </widget>
    <addaction name="menuFile"/>
@@ -76,11 +77,19 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave_As"/>
+   <addaction name="actionPrint"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
   </widget>
   <action name="actionNew">
    <property name="icon">
     <iconset>
-     <normalon>:/imgs/new.png</normalon>
+     <normalon>:/imgs/New.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -88,16 +97,31 @@
    </property>
   </action>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Open.png</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
   </action>
   <action name="actionSave_As">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Save_As.png</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Save As</string>
    </property>
   </action>
   <action name="actionPrint">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Print.png</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Print</string>
    </property>
@@ -108,21 +132,52 @@
    </property>
   </action>
   <action name="actionCopy">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Copy.png</normalon>
+     <activeon>:/imgs/copy</activeon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Copy</string>
    </property>
   </action>
   <action name="actionPaste">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Paste.png</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Paste</string>
    </property>
   </action>
   <action name="actionCut">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Cut.png</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Cut</string>
    </property>
   </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Undo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
   <action name="actionRedo">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/Redo.png</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Redo</string>
    </property>
